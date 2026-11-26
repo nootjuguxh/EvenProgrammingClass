@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="20" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.university.DashboardController">
+
+  <padding>
+    <Insets top="20" right="20" bottom="20" left="20"/>
+  </padding>
+
+  <Label text="Welcome to the University Dashboard!" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+  <HBox spacing="20">
+    <VBox spacing="5" prefWidth="180" style="-fx-padding: 20; -fx-background-color: #3498db; -fx-background-radius: 8;">
+      <Label text="Students" style="-fx-text-fill: white;"/>
+      <Label fx:id="studentCountLabel" text="-" style="-fx-text-fill: white; -fx-font-size: 32px; -fx-font-weight: bold;"/>
+    </VBox>
+    <VBox spacing="5" prefWidth="180" style="-fx-padding: 20; -fx-background-color: #27ae60; -fx-background-radius: 8;">
+      <Label text="Programs" style="-fx-text-fill: white;"/>
+      <Label fx:id="programCountLabel" text="-" style="-fx-text-fill: white; -fx-font-size: 32px; -fx-font-weight: bold;"/>
+    </VBox>
+  </HBox>
+
+  <Label fx:id="lastUpdatedLabel" text="Waiting for first refresh..."/>
+  <Label fx:id="statusLabel" text="Connecting..."/>
+</VBox>

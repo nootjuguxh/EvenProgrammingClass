@@ -1,0 +1,9 @@
+.my-button {
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+.title-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
